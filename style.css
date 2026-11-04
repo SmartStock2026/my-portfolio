@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Enabled smooth scrolling */
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* 1. Flexbox & Sticky setup for Navbar */
 .navbar {
     background: #1e293b;
     color: white;
@@ -19,6 +20,30 @@ body {
     font-weight: bold;
     font-size: 24px;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Menu stays fixed at top when scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation links layout */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
 }
 
 .hero-section {
@@ -51,6 +76,7 @@ body {
     font-weight: bold;
     border-radius: 30px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -85,11 +111,11 @@ h2 {
     border-radius: 2px;
 }
 
+/* 2. CSS Grid setup for Skills Layout */
 .skills-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
-    flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -115,4 +141,37 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
+}
+
+/* 3. Media Queries for Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and menu items vertically on mobile */
+        padding: 15px 20px;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px; /* Scales down font size for smaller viewports */
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 50px 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
 }
