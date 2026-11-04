@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9fbfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #1e293b;
+    color: white;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content .highlight {
+    color: #38bdf8;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    box-shadow: 0px 5px 15px rgba(56, 189, 248, 0.4);
+}
+
+.container {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dark-bg {
+    background-color: #f1f5f9;
+    max-width: 100%;
+    width: 100%;
+}
+
+h2 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: white;
+    color: #1e293b;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 4px solid #38bdf8;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
