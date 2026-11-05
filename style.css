@@ -314,6 +314,34 @@ footer {
 
 
 /* ==========================================
+   MODULE 05: SOCIAL LINKS COMPONENTS
+   ========================================== */
+.social-links { 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 40px; 
+}
+
+.social-btn { 
+    background: #1e293b; 
+    color: white; 
+    padding: 12px 24px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    transition: 0.3s; 
+    border: 1px solid #334155; 
+}
+
+.social-btn:hover { 
+    background: #38bdf8; 
+    color: #0f172a; 
+    box-shadow: 0 4px 10px rgba(56,189,248,0.2); 
+}
+
+
+/* ==========================================
    DARK MODE CONTROL PROPERTIES
    ========================================== */
 body.dark-mode, .dark-mode .container { 
@@ -356,6 +384,17 @@ body.dark-mode, .dark-mode .container {
 
 .dark-mode .project-btn.github:hover { 
     background-color: #0f172a; 
+}
+
+body.dark-mode .social-btn { 
+    background: #334155; 
+    color: white; 
+    border-color: #64748b; 
+}
+
+body.dark-mode .social-btn:hover { 
+    background: #38bdf8; 
+    color: #0f172a; 
 }
 
 
