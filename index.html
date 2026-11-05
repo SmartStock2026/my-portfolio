@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codomax Intern | Web Developer Portfolio</title>
+    <meta name="description" content="A professional and responsive web developer portfolio.">
+    <meta name="theme-color" content="#1e293b">
+
+    <title>Web Developer Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar Section -->
+    <!-- Navbar -->
     <header class="navbar">
-        <div class="logo">Intern Portfolio</div>
-        
-        <button class="menu-toggle" id="menuToggle">?</button>
-        
+        <div class="logo">My Portfolio</div>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">?</button>
+
         <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -22,19 +28,21 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        
-        <button id="themeToggle" class="theme-btn">??</button>
+
+        <button id="themeToggle" class="theme-btn"
+            aria-label="Toggle dark mode">??</button>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section reveal">
         <div class="hero-content">
             <h1>Welcome to <span class="highlight">My Portfolio</span></h1>
-            <p>Web Development Intern at Codomax Digital Solutions</p>
-            
+
+            <p>Web Development | Frontend Development | Programming</p>
+
             <div class="hero-buttons">
-                <a href="#contact" class="btn">Get In Touch</a>
-                <a href="resume.pdf" download class="btn btn-secondary">?? Download Resume</a>
+                <a href="#projects" class="btn">Explore Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
     </section>
@@ -43,19 +51,27 @@
     <section id="about" class="container reveal">
         <h2>About Me</h2>
         <div class="underline"></div>
-        <p>I am an aspiring web developer undergoing practical training. I love solving problems, writing clean code, and designing modern website layouts.</p>
+
+        <p>
+            I am an aspiring web developer interested in creating
+            modern, responsive and user-friendly websites.
+            I enjoy learning new technologies, solving problems
+            and building practical web development projects.
+        </p>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="container dark-bg reveal">
         <h2>Education</h2>
         <div class="underline"></div>
-        
+
         <div class="education-timeline">
             <div class="education-card">
-                <h3>Bachelor of Computer Applications / Science</h3>
-                <p class="institute">Your College / University Name</p>
-                <p class="duration">2023 - 2026</p>
+                <h3>Undergraduate Studies</h3>
+                <p class="institute">
+                    Bachelor of Science – Information Technology
+                </p>
+                <p class="duration">Currently Pursuing</p>
             </div>
         </div>
     </section>
@@ -64,14 +80,17 @@
     <section id="skills" class="container reveal">
         <h2>Technical Skills</h2>
         <div class="underline"></div>
-        
+
         <div class="skills-grid">
             <div class="skill-card">HTML5</div>
             <div class="skill-card">CSS3</div>
             <div class="skill-card">JavaScript</div>
             <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">C Programming</div>
             <div class="skill-card">C++</div>
             <div class="skill-card">SQL</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">DBMS</div>
         </div>
     </section>
 
@@ -79,92 +98,128 @@
     <section id="projects" class="container dark-bg reveal">
         <h2>My Projects</h2>
         <div class="underline"></div>
-        
+
         <div class="projects-grid">
-            <!-- Project Card 1 -->
+
             <div class="project-card">
                 <h3>Personal Portfolio</h3>
-                <p>A fully responsive professional portfolio featuring clean layouts, a dark mode toggle, and custom scroll animations.</p>
+
+                <p>
+                    A responsive portfolio website featuring
+                    modern design, dark mode and smooth
+                    scrolling animations.
+                </p>
+
                 <div class="project-links">
-                    <a href="https://github.com" target="_blank" class="project-btn github">GitHub</a>
-                    <a href="#" class="project-btn live">Live Demo</a>
+                    <a href="#home" class="project-btn live">
+                        Live Website
+                    </a>
                 </div>
             </div>
 
-            <!-- Project Card 2 -->
             <div class="project-card">
-                <h3>Task Manager Web App</h3>
-                <p>A dynamic task management tool built using Javascript to track custom user priorities and daily active goals.</p>
+                <h3>SmartStock – Billing Management System</h3>
+
+                <p>
+                    A web-based billing and inventory management
+                    system designed to manage products, stock
+                    and billing operations.
+                </p>
+
                 <div class="project-links">
-                    <a href="https://github.com" target="_blank" class="project-btn github">GitHub</a>
-                    <a href="#" class="project-btn live">Live Demo</a>
+                    <a href="https://smartstock2026.github.io/smartstock/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-btn live">
+                        Live Demo
+                    </a>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container reveal">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <div class="underline"></div>
-        
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            
-            <button type="submit" class="btn">Send Message</button>
-            <p id="formMessage"></p>
-        </form>
 
-        <!-- Module 05 Addition: Active Social Links -->
+        <p>
+            Thank you for visiting this portfolio.
+            For professional inquiries, please use the
+            appropriate professional networking platform.
+        </p>
+
         <div class="social-links">
-            <a href="https://github.com" target="_blank" class="social-btn">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
-            <a href="mailto:your-email@email.com" class="social-btn">Email</a>
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn">GitHub</a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn">LinkedIn</a>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 | Designed by Codomax Intern</p>
+        <p>&copy; 2026 | Web Developer Portfolio</p>
     </footer>
 
-    <!-- JavaScript Logic -->
+    <!-- JavaScript -->
     <script>
-        // Mobile Toggle Logic
+        // Mobile Navigation
         const menuToggle = document.getElementById("menuToggle");
         const navLinks = document.getElementById("navLinks");
-        
-        menuToggle.addEventListener("click", () => navLinks.classList.toggle("active"));
+
+        menuToggle.addEventListener("click", () => {
+            const isActive = navLinks.classList.toggle("active");
+
+            menuToggle.setAttribute("aria-expanded", isActive);
+            menuToggle.textContent = isActive ? "?" : "?";
+        });
+
         document.querySelectorAll(".nav-links a").forEach(link => {
-            link.addEventListener("click", () => navLinks.classList.remove("active"));
-        });
-
-        // Theme Toggle Logic
-        const themeToggle = document.getElementById("themeToggle");
-        themeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "??" : "??";
-        });
-
-        // Reveal Animations
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => { 
-                if(entry.isIntersecting) entry.target.classList.add("show"); 
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "?";
             });
         });
-        document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
-        // Form Validation Logic
-        const contactForm = document.getElementById("contactForm");
-        contactForm.addEventListener("submit", function(e) {
-            e.preventDefault();
-            const msg = document.getElementById("formMessage");
-            msg.textContent = "Message sent successfully!";
-            msg.style.color = "green";
-            contactForm.reset();
+        // Dark / Light Mode
+        const themeToggle = document.getElementById("themeToggle");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            const isDark = document.body.classList.contains("dark-mode");
+
+            themeToggle.textContent = isDark ? "??" : "??";
+            themeToggle.setAttribute(
+                "aria-label",
+                isDark ? "Switch to light mode" : "Switch to dark mode"
+            );
+        });
+
+        // Scroll Reveal Animation
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll(".reveal").forEach(element => {
+            observer.observe(element);
         });
     </script>
+
 </body>
 </html>
